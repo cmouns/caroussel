@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: blue;
+    background-image: url(https://i.pinimg.com/originals/7b/de/7f/7bde7f9095e04e3f7507ed19df9554b9.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    display : flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 250px;
+    border: solid 5px black;
+    width: 400px;
+
+    
+
+}
+.imagecontainer {
+    position: relative;
+    width: 100%;
+    height: 400px;      
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    overflow: hidden;
+    background: #222;  
+ 
+}
+
+
+.buttonCaroussel{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    border-radius: 15px;
+    box-shadow: rgba(red, green, blue, alpha);
+    width: 15%;
+    height: 75px;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+}
+
+
+
+h1 {
+    background-color:black;
+    position: absolute;
+    top: 5%;
+    left: 19%;
+    font-size: 5rem;
+    color: white;
+}
+.texteEquipage {
+    background-color: black;
+    top: 70%;
+    left: 48.5%;
+    position: absolute;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+img {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+
+
+img.hidden {
+    opacity: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.roleEquipage{
+    background-color: black;
+    position: absolute;
+    left: 46.5%;
+    top: 20%;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+
+}
